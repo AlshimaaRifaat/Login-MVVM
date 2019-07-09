@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,52 +9,37 @@
     android:padding="10dp"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ticket Id"
-        android:textSize="22dp"
-        android:textColor="#fff"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:id="@+id/ticketid"
+        android:id="@+id/username"
         android:layout_marginTop="20dp"
-
+        android:hint="User Name"
+        android:textColorHint="#fff"
+        android:textSize="20dp"
+        android:textColor="#fff"
         />
-    <TextView
+
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ticket Name"
-        android:textSize="22dp"
-        android:textColor="#fff"
-        android:id="@+id/ticketname"
-        android:layout_gravity="center"
-        android:gravity="center"
+        android:id="@+id/userpass"
         android:layout_marginTop="20dp"
-
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ticket Desc"
-        android:textSize="22dp"
-        android:id="@+id/ticketdesc"
+        android:hint="User Pas"
+        android:textColorHint="#fff"
+        android:textSize="20dp"
+        android:layout_below="@+id/username"
         android:textColor="#fff"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-
         />
-
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#fff"
-        android:textSize="20dp"
-        android:background="#ed9b9b"
-        android:layout_marginTop="30dp"
+        android:textSize="22dp"
+        android:text="Login"
+        android:background="#e70c0c"
+        android:layout_alignParentBottom="true"
         android:onClick="getTokenView"
-        android:text="Get Data"/>
+        android:id="@+id/login"/>
 
-</LinearLayout>
+</RelativeLayout>
